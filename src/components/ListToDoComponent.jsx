@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { getAllTodos } from './services/TodoService';
+import { getAllTodos } from '../services/TodoService';
 
 const ListToDoComponent = () => {
 

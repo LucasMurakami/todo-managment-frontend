@@ -1,11 +1,15 @@
 import './App.css'
-import ListToDoComponent from './ListToDoComponent'
+import FooterComponent from './components/FooterComponent'
+import HeaderComponent from './components/HeaderComponent'
+import ListToDoComponent from './components/ListToDoComponent'
 
 function App() {
   
   return (
     <>
+    <HeaderComponent/>
       <ListToDoComponent/>
+    <FooterComponent/>
     </>
   )
 }
