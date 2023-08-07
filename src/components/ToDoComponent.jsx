@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { saveTodo } from '../services/TodoService';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
 const ToDoComponent = () => {
 
@@ -10,6 +10,8 @@ const ToDoComponent = () => {
     const [completed, setCompleted] = useState(false);
 
     const navigate = useNavigate();
+    const { id } = useParams();
+
 
     function saveOrUpdateTodo(e) {
         e.preventDefault();
@@ -25,13 +27,21 @@ const ToDoComponent = () => {
         })
     }
 
+    function pageTittle() {
+        if(id) {
+            return <h2 className='text-center'>Update ToDo</h2>
+        }else {
+            return <h2 className='text-center'>Add ToDo</h2>
+        }
+    }
+
   return (
     <div className='container'>
         <br/>
         <br/>
         <div className='row'>
             <div className='card col-md-6 offset-md-3 offset-md-3'>
-                <h2 className='text-center'>Add ToDo</h2>
+                { pageTittle() }
                 <div className='card-body'>
 
                     <form>
