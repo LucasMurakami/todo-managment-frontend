@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const BASE_REST_API_URL = 'http://localhost:8080/api/todos';
+const BASE_REST_API_URL = 'https://todo-managment-backend-fffdfbd8cb2d.herokuapp.com/';
 
 export const getAllTodos = () => axios.get(BASE_REST_API_URL);
 
