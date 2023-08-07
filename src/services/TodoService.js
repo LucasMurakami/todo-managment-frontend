@@ -7,3 +7,5 @@ export const getAllTodos = () => axios.get(BASE_REST_API_URL);
 export const getTodo = (id) => axios.get(BASE_REST_API_URL + '/' + id); 
 
 export const saveTodo = (todo) => axios.post(BASE_REST_API_URL, todo);
+
+export const updateTodo = (id, todo) => axios.put(BASE_REST_API_URL + '/' + id, todo);
