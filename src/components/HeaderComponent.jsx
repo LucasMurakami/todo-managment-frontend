@@ -6,7 +6,7 @@ const HeaderComponent = () => {
         <header>
             <nav className='navbar navbar-expand-md navbar-dark bg-dark'>
                 <div>
-                    <a href='http://localhost:3000' className='navbar-brand'>
+                    <a href='https://todo-managment-frontend-23319a2ae01f.herokuapp.com/' className='navbar-brand'>
                         ToDo Managment Application
                     </a>
                 </div>
